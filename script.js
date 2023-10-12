@@ -6,11 +6,11 @@ const orderTable = {}
 
 
 function froyoOrderTable(arr) {
-    arr.forEach(element => {
-        if (orderTable[element]) {
-            orderTable[element] += 1;
+    arr.forEach(flavor => {
+        if (orderTable[flavor]) {
+            orderTable[flavor] += 1;
         } else {
-            orderTable[element] = 1;
+            orderTable[flavor] = 1;
         }
     });
     return orderTable;
